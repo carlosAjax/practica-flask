@@ -1,0 +1,173 @@
+{% extends 'tienda/master.html' %}
+{% block banner %}
+{{ super() }}
+{% block banner_style %}
+<div class="banner d-flex align-items-center pl-3 pl-lg-5">
+  <div>
+    <h1 class="text-capitalize text-slanted mb-0">minimalist</h1>
+    <h1 class="text-uppercas font-weight-bold">interior style</h1>
+    <a href="products.html" class="btn btn-yellow">view collection</a>
+  </div>
+</div>
+ 
+{% endblock %}
+
+ 
+{% endblock %}
+
+{% block contenido_home %}
+    <!-- services section -->
+    <section class="services py-5 text-center">
+      <div class="container">
+        <div class="row">
+          <!-- single service -->
+          <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+            <span class="service-icon">
+              <i class="fas fa-parachute-box"></i>
+            </span>
+            <h5 class="font-weight-bold text-uppercase">free shipping</h5>
+            <p class="text-muted text-capitalize">
+              free shipping on all order over 100.00
+            </p>
+          </div>
+          <!-- end of single service -->
+          <!-- single service -->
+          <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+            <span class="service-icon">
+              <i class="fas fa-phone-volume"></i>
+            </span>
+            <h5 class="font-weight-bold text-uppercase">online support 24/7</h5>
+            <p class="text-muted text-capitalize">
+              we will assist you with your inquiries
+            </p>
+          </div>
+          <!-- end of single service -->
+          <!-- single service -->
+          <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+            <span class="service-icon">
+              <i class="fas fa-dollar-sign"></i>
+            </span>
+            <h5 class="font-weight-bold text-uppercase">money back gurantee</h5>
+            <p class="text-muted text-capitalize">
+              free 100% refund for 30 days
+            </p>
+          </div>
+          <!-- end of single service -->
+        </div>
+      </div>
+    </section>
+    <!-- end of services section -->
+    <!-- categories -->
+    <section class="home-categories py-5">
+      <div class="container">
+        <div class="row">
+          <!-- category title -->
+          <div class="col-10 mx-auto col-md-6 col-lg-3 align-self-center">
+            <h5 class="text-uppercase">product categories</h5>
+            <p class="text-muted">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
+              repellendus!
+            </p>
+            <a
+              href="products.html"
+              class="text-weight-bold text-capitalize categories-link"
+            >
+              view all categories
+            </a>
+            <div class="categories-underline"></div>
+          </div>
+          <!-- main -->
+          <div class="col-10 mx-auto col-md-6 col-lg-9 my-3">
+            <div class="row">
+              <!-- single category -->
+              <div class="col-md-6 col-lg-3 my-3">
+                <div class="category-container">
+                  <img
+                    src="{{ url_for('static',filename='img/cagetogoryImg/kitchen-category.jpeg' ) }}"
+                    class="img-fluid category-img"
+                    alt="category img "
+                  />
+                  <a href="products.html" class="category-link">
+                    <h6 class="text-uppercase mb-0">kitchen</h6>
+                    <p class="mb-0 text-yellow">20 items</p>
+                  </a>
+                </div>
+              </div>
+              <!-- end of  single category -->
+              <!-- single category -->
+              <div class="col-md-6 col-lg-3 my-3">
+                <div class="category-container">
+                  <img
+                    src="{{ url_for('static',filename='img/cagetogoryImg/bathroom-category.jpeg' ) }}"
+                    class="img-fluid category-img"
+                    alt="category img "
+                  />
+                  <a href="products.html" class="category-link">
+                    <h6 class="text-uppercase mb-0">bahtroom</h6>
+                    <p class="mb-0 text-yellow">20 items</p>
+                  </a>
+                </div>
+              </div>
+              <!-- end of  single category -->
+              <!-- single category -->
+              <div class="col-md-6 col-lg-3 my-3">
+                <div class="category-container">
+                  <img
+                    src="{{ url_for('static',filename='img/cagetogoryImg/livingroom-category.jpeg' ) }}"
+                    class="img-fluid category-img"
+                    alt="category img "
+                  />
+                  <a href="products.html" class="category-link">
+                    <h6 class="text-uppercase mb-0">living room</h6>
+                    <p class="mb-0 text-yellow">20 items</p>
+                  </a>
+                </div>
+              </div>
+              <!-- end of  single category -->
+              <!-- single category -->
+              <div class="col-md-6 col-lg-3 my-3">
+                <div class="category-container">
+                  <img
+                    src="{{ url_for('static',filename='img/cagetogoryImg/patio-category.jpeg' ) }}"
+                    class="img-fluid category-img"
+                    alt="category img "
+                  />
+                  <a href="products.html" class="category-link">
+                    <h6 class="text-uppercase mb-0">patio</h6>
+                    <p class="mb-0 text-yellow">20 items</p>
+                  </a>
+                </div>
+              </div>
+              <!-- end of  single category -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end categories -->
+     <!-- home filler -->
+     <section>
+      <div class="container-fluid">
+        <div class="row home-filler align-items-end pb-5">
+          <div class="col-10 mx-auto text-white text-center">
+            <h4 class="text-uppercase font-weight-bold">
+              smart furniture collection
+            </h4>
+            <p class="text-capitalize">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+              iure?
+            </p>
+            <a
+              href="product.html"
+              class="text-weight-bold text-capitalize collection-link"
+            >
+              view collection
+            </a>
+            <div class="collection-underline"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of home filler -->
+  
+{% endblock %}

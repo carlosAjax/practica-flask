@@ -1,25 +1,21 @@
-from flask import Blueprint
+from flask import Blueprint,render_template
 
 taskRoute = Blueprint('task',__name__,url_prefix='/task')
 
-@taskRoute.route('/')
-def index():
-    return 'Index'
+@taskRoute.route('/home')
+def home():
+    return render_template('tienda/tasks/home.html')
 
-@taskRoute.route('/<int:id>')
-def show(id:int):
-    return 'Show' + str(id)
+@taskRoute.route('/products')
+def products():
+    return render_template('tienda/tasks/products.html')
 
-@taskRoute.route('/delete/<int:id>')
-def delete(id:int):
-    return 'Delete' + str(id)
+@taskRoute.route('/single')
+def singleProducts():
+    return render_template('tienda/tasks/single-products.html')
 
-@taskRoute.route('/create',methods=('GET','POST'))
-def create():
-    return 'Create'
-
-@taskRoute.route('/update/<int:id>',methods=('GET','POST'))
-def update(id:int):
-    return 'Update' + str(id)
+@taskRoute.route('/store')
+def storeCar():
+    return render_template('tienda/tasks/store.html')
 
 

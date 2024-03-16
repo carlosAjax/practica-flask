@@ -1,0 +1,204 @@
+{% extends 'tienda/master.html' %}
+{% block banner %}
+{{ super() }}
+{% block banner_style %}
+<div class="banner-store d-flex align-items-center justify-content-center pl-3 pl-lg-5 text-center">
+ <div>
+   <h1 class="text-capitalize text-yellow text-slanted display-4">
+     comfy sloth
+   </h1>
+   <h1 class="text-capitalize font-weight-bold display-4">
+     our products
+   </h1>
+ </div>
+</div>
+ 
+{% endblock %}
+ 
+{% endblock %}
+{% block contenido_dinamico %}
+ <!-- totals -->
+ <section class="totals py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center text-uppercase">
+        <div class="row">
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2">
+            <p class="text-uppercase">products</p>
+          </div>
+          <!-- end of  single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-4">
+            <p class="text-uppercase">name of products</p>
+          </div>
+          <!-- end of  single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2">
+            <p class="text-uppercase">price</p>
+          </div>
+          <!-- end of  single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2">
+            <p class="text-uppercase">quantity</p>
+          </div>
+          <!-- end of  single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2">
+            <p class="text-uppercase">total</p>
+          </div>
+          <!-- end of  single column -->
+        </div>
+        <!-- end of column -->
+        <hr />
+        <!-- single product -->
+        <div class="row my-3 align-items-center">
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2">
+            <img
+              src="{{ url_for('static',filename='img/img-products/product-2.png' ) }}"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <!-- end of single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-4">
+            <p>comfortable chair</p>
+          </div>
+          <!-- end of single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2"><p>$100.00</p></div>
+          <!-- end of single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2">
+            <!-- cart buttons -->
+            <div class="d-flex justify-content-center align-items-center">
+              <span class="btn btn-black mx-1">-</span>
+              <span class="btn btn-black mx-1">4</span>
+              <span class="btn btn-black mx-1">+</span>
+            </div>
+            <!-- end cart buttons -->
+          </div>
+          <!-- end of single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2"><p>$100.00</p></div>
+          <!-- end of single column -->
+        </div>
+        <!-- end of single product -->
+        <!-- single product -->
+        <div class="row my-3 align-items-center">
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2">
+            <img
+              src="{{ url_for('static',filename='img/img-products/product-3.png' ) }}"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <!-- end of single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-4">
+            <p>comfortable chair</p>
+          </div>
+          <!-- end of single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2"><p>$100.00</p></div>
+          <!-- end of single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2">
+            <!-- cart buttons -->
+            <div class="d-flex justify-content-center align-items-center">
+              <span class="btn btn-black mx-1">-</span>
+              <span class="btn btn-black mx-1">4</span>
+              <span class="btn btn-black mx-1">+</span>
+            </div>
+            <!-- end cart buttons -->
+          </div>
+          <!-- end of single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2"><p>$100.00</p></div>
+          <!-- end of single column -->
+        </div>
+        <!-- end of single product -->
+        <!-- single product -->
+        <div class="row my-3 align-items-center">
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2">
+            <img
+              src="{{ url_for('static',filename='img/img-products/product-1.png' ) }}  "
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <!-- end of single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-4">
+            <p>comfortable chair</p>
+          </div>
+          <!-- end of single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2"><p>$100.00</p></div>
+          <!-- end of single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2">
+            <!-- cart buttons -->
+            <div class="d-flex justify-content-center align-items-center">
+              <span class="btn btn-black mx-1">-</span>
+              <span class="btn btn-black mx-1">4</span>
+              <span class="btn btn-black mx-1">+</span>
+            </div>
+            <!-- end cart buttons -->
+          </div>
+          <!-- end of single column -->
+          <!-- single column -->
+          <div class="col-10 mx-auto col-md-2"><p>$100.00</p></div>
+          <!-- end of single column -->
+        </div>
+        <!-- end of single product -->
+        <div class="row">
+          <div
+            class="col col-sm-6 mx-auto d-flex justify-content-center flex-wrap"
+          >
+            <button type="button" class="btn btn-black my-2">
+              continue shopping
+            </button>
+            <button type="button" class="btn btn-yellow my-2 ml-2">
+              checkout
+            </button>
+          </div>
+        </div>
+        <!-- end o cart buttons -->
+        <div class="row">
+          <div class="col mx-auto my-3 col-sm-8 col-md-6 col-lg-4">
+            <div class="card card-body bg-secondary text-uppercase">
+              <div class="card-title text-white"><h6>cart total</h6></div>
+              <div class="row">
+                <!-- single row -->
+                <div class="col-6">sub totoal</div>
+                <div class="col-6">$900.00</div>
+                <!-- end of single row -->
+                <!-- single row -->
+                <div class="col-6">tax</div>
+                <div class="col-6">$123.00</div>
+                <!-- end of single row -->
+                <!-- single row -->
+                <div class="col-6">shipping</div>
+                <div class="col-6">$66.00</div>
+                <!-- end of single row -->
+                <!-- single row -->
+                <div class="col-6 my-3">order total</div>
+                <div class="col-6 my-3 text-danger">$10.0000</div>
+                <!-- end of single row -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of  totals -->
+
+ 
+{% endblock %}

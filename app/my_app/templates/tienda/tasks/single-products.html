@@ -1,0 +1,144 @@
+{% extends 'tienda/master.html' %}
+{% block banner %}
+{{ super() }}
+{% block banner_style %}
+<div class="banner-single-product d-flex align-items-center justify-content-center pl-3 pl-lg-5 text-center">
+ <div>
+   <h1 class="text-capitalize text-yellow text-slanted display-4">
+     comfy sloth
+   </h1>
+   <h1 class="text-capitalize font-weight-bold display-4">
+     our products
+   </h1>
+ </div>
+</div>
+ 
+{% endblock %}
+ 
+{% endblock %}
+{% block contenido_dinamico %}
+ <!-- single product -->
+ <section class="single-product py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-10 mx-auto col-lg-4 text-center my-5">
+        <div class="single-product-img-container">
+          <img
+            src="{{ url_for('static',filename='img/img-products/product-1.png' ) }}"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="row single-product-photos mt-3">
+          <!-- single photo -->
+          <div class="col-2 col-sm-2 single-product-photo p-1">
+            <img
+              src="{{ url_for('static',filename='img/img-products/product-1.png' ) }}"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <!-- endo of single photo -->
+          <!-- single photo -->
+          <div class="col-2 col-sm-2 single-product-photo p-1">
+            <img
+              src="{{ url_for('static',filename='img/img-products/product-1.png' ) }}"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <!-- endo of single photo -->
+          <!-- single photo -->
+          <div class="col-2 col-sm-2 single-product-photo p-1">
+            <img
+              src="{{ url_for('static',filename='img/img-products/product-1.png' ) }}"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <!-- endo of single photo -->
+          <!-- single photo -->
+          <div class="col-2 col-sm-2 single-product-photo p-1">
+            <img
+              src="{{ url_for('static',filename='img/img-products/product-1.png' ) }}"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <!-- endo of single photo -->
+          <!-- single photo -->
+          <div class="col-2 col-sm-2 single-product-photo p-1">
+            <img
+              src="{{ url_for('static',filename='img/img-products/product-1.png' ) }}"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <!-- endo of single photo -->
+          <!-- single photo -->
+          <div class="col-2 col-sm-2 single-product-photo p-1">
+            <img
+              src="{{ url_for('static',filename='iimg/img-products/product-1.png' ) }}"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <!-- endo of single photo -->
+        </div>
+      </div>
+      <!-- info -->
+      <div class="col-10 mx-auto col-lg-8 single-product-info my-5 px-lg-5">
+        <!-- ratings -->
+        <div class="ratings">
+          <span class="rating-icon"><i class="fas fa-star"></i></span>
+          <span class="rating-icon"><i class="fas fa-star"></i></span>
+          <span class="rating-icon"><i class="fas fa-star"></i></span>
+          <span class="rating-icon"><i class="fas fa-star"></i></span>
+          <span class="rating-icon"><i class="far fa-star"></i></span>
+          <span class="text-capitalize">(25 customer reviews)</span>
+        </div>
+        <!-- end of ratings -->
+        <h2 class="text-uppercase my-2">premium office armchair</h2>
+        <h2>$10.00 - $200.00</h2>
+        <p class="lead text-muted">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          porro.
+        </p>
+        <!-- colors -->
+        <h5 class="text-uppercase">
+          colors :
+          <span
+            class="d-inline-block products-color products-color-black mr-2"
+          ></span>
+          <span
+            class="d-inline-block products-color products-color-red mr-2"
+          ></span>
+          <span
+            class="d-inline-block products-color products-color-blue mr-2"
+          ></span>
+        </h5>
+        <!-- end of colors -->
+        <!-- sizes -->
+        <h5 class="text-uppercase">
+          sizes : <span class="mx-2">xs</span> <span class="mx-2">s</span>
+          <span class="mx-2">m</span> <span class="mx-2">l</span>
+          <span class="mx-2">xl</span>
+        </h5>
+        <div class="d-flex flex-wrap">
+          <!-- cart buttons -->
+          <div class="d-flex my-2">
+            <span class="btn btn-black mx-1">-</span>
+            <span class="btn btn-black mx-1">4</span>
+            <span class="btn btn-black mx-1">+</span>
+          </div>
+          <button class="btn btn-black my-2 mx-2">wishlist</button>
+          <button class="btn btn-yellow my-2 mx-2">add to cart</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of single product -->
+ 
+{% endblock %}
