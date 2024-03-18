@@ -1,4 +1,6 @@
 from flask import Blueprint,render_template
+from my_app.tasks.model  import Producto
+
 
 taskRoute = Blueprint('task',__name__,url_prefix='/task')
 
